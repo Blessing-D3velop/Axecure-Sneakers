@@ -1,0 +1,144 @@
+.home-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  font-family: Arial, sans-serif;
+  height: auto;
+  padding: 40px 70px;
+  align-items: center;
+}
+
+.home-left-section {
+  margin-top: -100px; /* reduced (was -250px causing overlap) */
+}
+
+.home-heading-one,
+.home-heading-two {
+  color: white;
+  font-size: 80px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.home-description {
+  font-size: 21px;
+  color: gray;
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+.home-section-image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.buttons-container-one {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.shop-now-button {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.shop-now-button:hover {
+  background-color: darkred;
+  transform: translateY(-2px);
+}
+
+.view-collection-button {
+  background-color: transparent;
+  border: 2px solid rgb(185, 180, 180);
+  color: white;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.view-collection-button:hover {
+  background-color: white;
+  color: black;
+  transform: translateY(-2px);
+}
+
+.featured-section {
+  margin-top: 60px; /* fixed (was -150px hiding it) */
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Responsive: Tablets ===== */
+@media (max-width: 1024px) {
+  .home-section {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    height: auto;
+    padding: 80px 40px; /* reduced from 160px */
+  }
+
+  .home-left-section {
+    margin-top: 0;
+  }
+
+  .home-heading-one,
+  .home-heading-two {
+    font-size: 50px;
+  }
+
+  .home-description {
+    font-size: 18px;
+  }
+}
+
+/* ===== Responsive: Mobile ===== */
+@media (max-width: 600px) {
+  body {
+    margin-top: 0px;
+  }
+
+  .home-section {
+    padding: 60px 20px;
+    row-gap: 25px;
+  }
+
+  .buttons-container-one {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .shop-now-button,
+  .view-collection-button {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 0;
+  }
+
+  .home-heading-one,
+  .home-heading-two {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .home-description {
+    font-size: 16px;
+  }
+}
+@media (max-height: 700px) {
+  .home-left-section {
+    margin-top: 0; /* stop pushing up on short screens */
+  }
+}

@@ -1,0 +1,36 @@
+.text-one {
+  text-align: center;
+  margin-top: 80px; /* reduced from 200px */
+  font-family: Arial;
+}
+
+.featured-collection-text {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.featured-description {
+  font-size: 21px;
+  color: gray;
+  margin-top: 10px; /* fixed (was -25px pulling text up) */
+  line-height: 1.4;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 1024px) {
+  .text-one {
+    margin-top: -40px; /* adjusted */
+  }
+}
+
+
+@media (max-width: 600px) {
+  .text-one {
+    margin-top: -50px;
+  }
+
+  .featured-description {
+    line-height: 1.6;
+  }
+}
