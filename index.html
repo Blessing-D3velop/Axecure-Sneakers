@@ -7,6 +7,7 @@
      <link rel="stylesheet" href="Styles/header.css"/>
      <link rel="stylesheet" href="Styles/home-section.css">
      <link rel="stylesheet" href="Styles/featured-section.css">
+     <link rel="stylesheet" href="Styles/about-section.css">
   </head>
   <body>
     <header>
@@ -30,7 +31,7 @@
             <div class="buttons-container-one">
               <button class="shop-now-button">
                 Shop Now
-                <img src="Images & Icons/Icons/icons8-right-arrow-48.png" alt="right arrow icon"/>
+                <img src="Images & Icons/Icons/icons8-right-arrow-48.png" alt="right arrow icon" class="arrow-icon"/>
               </button>
               <button class="view-collection-button">
                 View Collection
@@ -47,8 +48,34 @@
             <h3 class="featured-collection-text">Featured Collection</h3>
             <p class="featured-description">Discover our carefully curated selection of premium sneakers</p>
           </div>
+
+          <div class="shoe-cards-container">
+              <!-- shoe cards will be generated here by shoe-cards.js -->
+          </div>
         </section>
+
+        <section class="about-section">
+          <div class="about-container">
+            <div class="about-text animate-left">
+              <span class="story-tag">Our story</span>
+              <h4 class="about-heading">Carfted in Zimbabwe</h4>
+              <p class="paragraph-one">
+                AXECURE Sneaker is a Zimbabwe-based brand focused on style, comfort, and confidence. Managed by a passionate entrepreneur, the brand delivers quality sneakers designed for everyday wear.
+              </p>
+              <p class="paragraph-two">
+                We believe that great footwear is more than just an accessory—it's a statement of who you are. Every pair is carefully selected to ensure you walk with confidence and style.
+              </p>
+              <p class="paragraph-three">
+                From the streets of Harare to the world, AXECURE represents the spirit of African innovation and excellence in fashion. Join us on this journey as we redefine sneaker culture with a touch of Zimbabwean flair.
+              </p>
+            </div>
+            <div class="about-me-image-container animate-right">
+              <img src="Images & Icons/Images/Brian.jpg" alt="about me image" class="about-me-image">
+            </div>
+          </div>
+        </section>
+        
       </main>
-    <script></script>
+    <script type="module" src="Scripts/shoe-cards.js"></script>
   </body>
 </html>

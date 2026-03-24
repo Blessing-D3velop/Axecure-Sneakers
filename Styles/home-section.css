@@ -136,6 +136,12 @@
   .home-description {
     font-size: 16px;
   }
+  .shop-now-button {
+    height: 55px;
+  }
+  .arrow-icon{
+    width: 35px;
+  }
 }
 @media (max-height: 700px) {
   .home-left-section {
