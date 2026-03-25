@@ -12,28 +12,30 @@
     <link rel="stylesheet" href="Styles/home-section.css">
     <link rel="stylesheet" href="Styles/featured-section.css">
     <link rel="stylesheet" href="Styles/about-section.css">
+    <link rel="stylesheet" href="Styles/contact-section.css">
+    <link rel="stylesheet" href="Styles/footer.css">
   </head>
   <body>
     <header>
       <div class="left-section">
-      <img src="Images & Icons/Icons/icons8-a-50.png" alt="icon"/>
+      <img src="Images & Icons/Images/Axecure logo.png" class="logo" alt="icon"/>
       <h1 class="heading-one"><span class="axecure">Axecure</span> <span class="sneakers">Sneakers</span></h1>
       </div>
        <nav>
-        <p class="home" id="js-home-id">Home</p>
-        <p class="shop" id="js-shop-id">Shop</p>
-        <p class="about" id="js-about-id">About</p>
-        <p class="contact" id="js-contact-id">Contact</p>
+        <p class="home js-home">Home</p>
+        <p class="shop js-shop">Shop</p>
+        <p class="about js-about">About</p>
+        <p class="contact js-contact">Contact</p>
       </nav>
     </header>
       <main>
-        <section class="home-section">
+        <section class="home-section" id="js-home-id">
           <div class="home-left-section">
             <h1 class="home-heading-one">Step into</h1>
             <h2 class="home-heading-two">Confidence</h2>
             <p class="home-description">Premium sneakers from Zimbabwe</p>
             <div class="buttons-container-one">
-              <button class="shop-now-button">
+              <button class="shop-now-button js-shop-now">
                 Shop Now
                 <img src="Images & Icons/Icons/icons8-right-arrow-48.png" alt="right arrow icon" class="arrow-icon"/>
               </button>
@@ -47,7 +49,7 @@
           </div>
         </section>
 
-        <section class="featured-section">
+        <section class="featured-section" id="js-shop-id">
           <div class="text-one">
             <h3 class="featured-collection-text">Featured Collection</h3>
             <p class="featured-description">Discover our carefully curated selection of premium sneakers</p>
@@ -58,7 +60,7 @@
           </div>
         </section>
 
-        <section class="about-section">
+        <section class="about-section" id="js-about-id">
           <div class="about-container">
             <div class="about-text animate-left">
               <span class="story-tag">Our story</span>
@@ -78,8 +80,64 @@
             </div>
           </div>
         </section>
-        
+        <section class="contact-section" id="js-contact-id">
+          <div class="contact-section-container">
+
+            <h5>Ready to get you pair?</h5>
+
+            <p class="contact-description">Connect with us on whatspp and discover your perfect sneaker match!</p>
+
+            <div class="button-container-three">
+              <button class="button-chat-on-whatsapp js-chat-on-whatsapp">
+                <img src="Images & Icons/Icons/icons8-whatsapp-logo-48.png" alt="whatsap logo icon" class="whatsapp-icon"/>
+                Chat on WhatsApp
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <img src="Images & Icons/Images/Axecure logo.png" alt="Axecure logo"/>
+        <h2><span class="axecure">Axecure</span> Sneakers</h2>
+      </div>
+      <p class="footer-description">
+        Premium sneakers from Zimbabwe. Step into confidence with every pair.
+      </p>
+    </div>
+
+    <!-- Location -->
+    <div class="footer-section">
+      <h3>Location</h3>
+      <p>First Street, Samora Machel Ave</p>
+      <p>Harare, Zimbabwe</p>
+
+      <h3>Working Hours</h3>
+      <p>Mon - Fri: 9AM - 6PM</p>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-section">
+      <h3>Connect with us</h3>
+      <div class="social-icons">
+        <img src="Images & Icons/Icons/icons8-facebook-logo-48.png" class="js-facebook" alt="facebook"/>
+        <img src="Images & Icons/Icons/icons8-instagram-logo-48.png" class="js-instagram" alt="instagram"/>
+        <img src="Images & Icons/Icons/icons8-whatsapp-logo-48.png" class="js-whatsapp" alt="whatsapp"/>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Axecure Sneakers. All rights reserved.</p>
+  </div>
+</footer>
+  <script src="Scripts/page.js"></script>
     <script type="module" src="Scripts/shoe-cards.js"></script>
   </body>
 </html>

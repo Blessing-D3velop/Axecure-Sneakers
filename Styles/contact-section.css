@@ -1,0 +1,46 @@
+.contact-section-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+  text-align: center;
+  padding: 0 30px;
+    height: auto;
+  margin-bottom: 70px;
+}
+h5{
+  font-size: 40px;
+  color: white;
+}
+.contact-description{
+  font-size: 21px;
+  color: gray;
+  margin-top: 10px; /* fixed (was -25px pulling text up) */
+  line-height: 1.4;
+  margin-top: -25px;
+
+
+}
+.button-container-three{
+  display: flex;
+  justify-content: center;
+}
+.button-chat-on-whatsapp{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  gap: 10px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: background-color 0.5s ease, transform 0.5s ease; /* 👈 smooth hover */
+}
+.button-chat-on-whatsapp:hover {
+  background-color: red;
+  transform: translateY(-3px);
+  cursor: pointer;
+}

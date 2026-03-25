@@ -1,7 +1,7 @@
 body {
   background-color: rgb(20, 19, 19);
   margin: 0;
-  padding-top: 90px; /* space for fixed header */
+  padding-top: 40px; /* space for fixed header */
 }
 
 header {
@@ -31,10 +31,15 @@ header {
 .heading-one {
   font-size: 25px;
   flex-wrap: wrap;
+  cursor: pointer;
 }
-
+.logo{
+  width: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 .axecure {
-  color: white; /* added so it’s visible */
+  color: blue; /* added so it’s visible */
 }
 
 .sneakers {
@@ -63,7 +68,10 @@ nav p:hover {
     padding: 0 20px; /* less padding for tablets */
     gap: 15px;
   }
+  body {
 
+    padding-top: 100px; /* space for fixed header */
+  }
   nav {
     gap: 15px;
   }

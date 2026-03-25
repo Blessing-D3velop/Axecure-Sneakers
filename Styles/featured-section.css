@@ -61,6 +61,9 @@
     border-color: red;
     transform: scale(1.1);
   }
+  .shoe-card:hover {
+    border-color: red;
+  }
   
 .shoe-image{
   width: 100%;
@@ -91,13 +94,18 @@
   display: flex;
   align-items: center;
   font-weight: bold;
-  background-color: red;
+  background-color: #25D366;
   color: white;
   border: none;
   gap: 10px;
   padding: 5px 20px;
   border-radius: 5px;
   font-size: 15px;
+  transition: background-color 0.5s ease; /* 👈 smooth hover */
+}
+.order-button:hover {
+background-color: red;
+  cursor: pointer;
 }
 .whatsapp-icon{
   width: 45px;
