@@ -17,7 +17,7 @@ header {
   left: 0;
   right: 0;
   height: 80px;
-  padding: 0 40px; /* replaces fixed margins */
+  padding: 0 40px; 
   backdrop-filter: blur(50px);
   border-bottom: 1px solid rgb(73, 70, 70);
 }
@@ -30,52 +30,52 @@ header {
 
 .heading-one {
   font-size: 25px;
-  flex-wrap: wrap;
   cursor: pointer;
 }
+
 .logo{
   width: 50px;
   border-radius: 10px;
   cursor: pointer;
 }
 .axecure {
-  color: blue; /* added so it’s visible */
+  color: blue; 
 }
-
 .sneakers {
   color: red;
 }
 
+/* Nav styles */
 nav {
   display: flex;
   gap: 20px;
   font-size: 19px;
   color: rgb(216, 211, 211);
   transition: color 0.3s;
+  flex-wrap: nowrap; /* prevent wrapping */
+}
+
+nav p {
+  white-space: nowrap; /* prevent text breaking */
+  flex-shrink: 0; /* items don't shrink */
 }
 
 nav p:hover {
   color: red;
 }
 
-.line {
-  border-top: 1px solid rgb(216, 211, 211);
-}
-
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
   header {
-    padding: 0 20px; /* less padding for tablets */
+    padding: 0 20px; 
     gap: 15px;
   }
   body {
-
-    padding-top: 100px; /* space for fixed header */
+    padding-top: 100px; 
   }
   nav {
     gap: 15px;
   }
-
   .heading-one {
     font-size: 22px;
   }
@@ -83,24 +83,21 @@ nav p:hover {
 
 @media (max-width: 600px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 10px 20px;
-    gap: 10px;
+    flex-direction: row; /* keep header in one line */
+    justify-content: space-between;
+    height: 60px; /* smaller header */
+    padding: 0 15px;
   }
 
   .left-section {
-    margin: 0;
-    width: 100%;
-    justify-content: flex-start;
     gap: 10px;
   }
 
+  .heading-one {
+    display: none; /* hide heading on small screens */
+  }
+
   nav {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     gap: 10px;
   }
 }

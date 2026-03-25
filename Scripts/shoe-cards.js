@@ -40,7 +40,7 @@ const renderShoes = () => {
 
       const message = `Hello, I'm interested in the ${shoeName} sneaker. Is it available?`;
 
-      const phoneNumber = "263774631333"; // Zimbabwe number
+      const phoneNumber = "263774631333";
       const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
       window.open(whatsappUrl, '_blank');
@@ -58,7 +58,7 @@ const right = document.querySelector('.animate-right');
 window.addEventListener('scroll', () => {
   const aboutSection = document.querySelector('.about-section');
 
-  if (!aboutSection) return; // safety check
+  if (!aboutSection) return;
 
   const aboutTop = aboutSection.offsetTop;
   const scrollPosition = window.scrollY + window.innerHeight;
