@@ -1,13 +1,14 @@
 body {
   background-color: rgb(20, 19, 19);
   margin: 0;
-  padding-top: 40px; /* space for fixed header */
+  padding-top: 70px; /* space for fixed header */
 }
 
 header {
   font-family: Arial, sans-serif;
   color: rgb(216, 211, 211);
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
@@ -17,9 +18,10 @@ header {
   left: 0;
   right: 0;
   height: 80px;
-  padding: 0 40px; /* replaces fixed margins */
+  padding: 20px 40px; /* replaces fixed margins */
   backdrop-filter: blur(50px);
   border-bottom: 1px solid rgb(73, 70, 70);
+
 }
 
 .left-section {
@@ -65,29 +67,28 @@ nav p:hover {
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
   header {
-    padding: 0 20px; /* less padding for tablets */
+    padding: 20px 20px; /* less padding for tablets */
     gap: 15px;
+    display: flex;
   }
   body {
-
-    padding-top: 100px; /* space for fixed header */
+    padding-top: 70px; /* space for fixed header */
   }
   nav {
     gap: 15px;
+    flex-wrap: nowrap;
   }
 
-  .heading-one {
-    font-size: 22px;
-  }
 }
 
 @media (max-width: 600px) {
   header {
-    flex-direction: column;
+    position: fixed;
     align-items: flex-start;
     height: auto;
     padding: 10px 20px;
     gap: 10px;
+    flex-wrap: nowrap;
   }
 
   .left-section {
@@ -96,11 +97,11 @@ nav p:hover {
     justify-content: flex-start;
     gap: 10px;
   }
-
+  .heading-one {
+    display: none;
+  }
   nav {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     gap: 10px;
   }
 }

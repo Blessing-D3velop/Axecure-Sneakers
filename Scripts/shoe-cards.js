@@ -51,20 +51,3 @@ const renderShoes = () => {
 renderShoes();
 
 
-// ✅ Scroll animation for About section
-const left = document.querySelector('.animate-left');
-const right = document.querySelector('.animate-right');
-
-window.addEventListener('scroll', () => {
-  const aboutSection = document.querySelector('.about-section');
-
-  if (!aboutSection) return;
-
-  const aboutTop = aboutSection.offsetTop;
-  const scrollPosition = window.scrollY + window.innerHeight;
-
-  if (scrollPosition > aboutTop + 100) {
-    left?.classList.add('active');
-    right?.classList.add('active');
-  }
-});

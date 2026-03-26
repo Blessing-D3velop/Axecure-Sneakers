@@ -8,9 +8,6 @@
   align-items: center;
 }
 
-.home-left-section {
-  margin-top: -100px; /* reduced (was -250px causing overlap) */
-}
 
 .home-heading-one,
 .home-heading-two {
